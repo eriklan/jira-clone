@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import { ProjectListScreen } from 'screens/projectList';
+import { ProjectListScreen } from 'screens/projectList/index';
 
 function App() {
   return (

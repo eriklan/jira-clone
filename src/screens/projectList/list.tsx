@@ -1,14 +1,27 @@
-import React from 'react';
+import {User} from "screens/projectList/searchPanel"
 
-export const List = ({list, users}) => {
+interface Project {
+  id: string;
+  name: string;
+  personId: string;
+  pin: boolean;
+  organization: string;
+}
+
+interface ListProps {
+  list: Project[],
+  users: User[]
+}
+
+export const List = ({list, users}: ListProps) => {
   return (
     <table>
-      <thred>
+      <thead>
         <tr>
           <th>Title</th>
           <th>Manager</th>
         </tr>
-      </thred>
+      </thead>
       <tbody>
         {list.map(project => <tr key={project.id}>
           <td>{project.name}</td>
