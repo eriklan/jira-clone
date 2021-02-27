@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
 
-export const isFalsy = (value: unknow) => value === 0? false : !value
+export const isFalsy = (value: unknown) => value === 0? false : !value
 
 export const cleanObject = (object: object) => {
     const result = {...object}
