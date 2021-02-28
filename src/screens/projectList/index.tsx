@@ -10,6 +10,11 @@ const apiUrl = process.env.REACT_APP_API_URL
 export const ProjectListScreen = () => {
     const [users, setUsers] = useState([])
 
+    interface T {
+      name: string,
+      personId: string
+    }
+
     const [params, setParams] = useState({
         name: '',
         personId: ''
